@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Form Filler</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>Auto Form Filler</h1>
+
+  <!-- Initial section to choose whether register or select the user -->
+  <div id="welcome-screen">
+    <button id="register-option">Register New User</button>
+    <button id="select-user-option">Select Existing User</button>
+  </div>
+
+  <!-- User Registration Section -->
+  <div id="user-registration" style="display: none;">
+    <label>Username</label> 
+    <input type="text" id="new-username">
+    <button id="register-user">Register User</button>
+    <button id="back-to-welcome">Back</button>
+  </div>
+
+  <!-- User Selection Section -->
+  <div id="user-selection" style="display: none;">
+    <label>Select User
+      <select id="user-list">
+      </select>
+    </label>
+    <button id="back-to-welcome">Back</button>
+  </div>
+
+  <!-- Data Fields for Selected User -->
+  <div id="info" style="display: none;">
+    <label>Name</label>
+    <input type="text" id="name">
+    <label>Experience</label>
+    <input type="text" id="experience">
+    <label>Education</label>
+    <input type="text" id="education">
+    <label>Skills</label>
+    <input type="text" id="skills">
+    <button id="save">Save Data</button>
+    <button id="clear-data">Clear Data</button>
+    <button id="change-user">Change User</button>
+    <button id="delete-user">Delete User</button>
+  </div>
+
+</body>
+</html>
